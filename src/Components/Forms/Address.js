@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { Form, Card, Button } from "react-bootstrap";
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
+import '../../App.css';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import validator from "validator";
@@ -29,7 +30,7 @@ const Address = ({ nextStep, handleFormData, prevStep, values }) => {
       autoComplete="off"
       onSubmit={submitFormData} 
       sx={{ '& .MuiTextField-root': { m: 1, width: '25ch' }, mt: 12}}>
-            <div className="progress-bar">
+            <div className="progress-bar" style={{marginBottom: '15px'}} >
               <div style={{width: '100%'}}></div>
             </div>
             <Grid container row-spacing={2} columnSpacing={0.4}>

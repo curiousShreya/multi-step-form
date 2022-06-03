@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 const Final = ({ values }) => {
 
     //destructuring the object from values
-  const { firstName, lastName, email, address, appartment, city, state, zip  } = values;
+  const { firstName, lastName, email, address,city, state } = values;
   console.log(values);
   return (
     <>
